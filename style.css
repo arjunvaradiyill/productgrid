@@ -1,0 +1,156 @@
+/* style.css */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #962f2a;
+    color: white;
+    padding: 0.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    margin-right: 0.5rem; /* Adjust spacing between logo and heading */
+    height: 40px; /* Adjust size of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin from h1 */
+}
+
+
+/* Navigation styling */
+nav {
+    background-color: #e3867e;
+    padding: 0.9rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    transition: background-color ease-in-out 0.3s;
+}
+
+nav ul li a:hover {
+    background-color:#ff748b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.Products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px; /* Ensure this is consistent */
+    background-color: #fff;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 1rem;
+    text-align: center;
+    flex: 1; /* Ensure it fills the remaining space */
+}
+
+.product-info h4,
+.product-info p {
+    margin: 0.5rem 0;
+}
+
+.product-info .price {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-info .btn {
+    background-color:#d45a5a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.product-info .btn:hover {
+    background-color:#00bcd4 ;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(218, 8, 8, 0.2);
+}
+footer {
+    background-color:#e3867e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d45a5a;
+}
