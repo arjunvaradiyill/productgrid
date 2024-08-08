@@ -120,7 +120,7 @@ nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(218, 8, 8, 0.2);
 }
 footer {
-    background-color:#e3867e;
+    background-color:#690d05;
     color: white;
     text-align: center;
     padding: 0.5rem;
@@ -154,5 +154,5 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #d45a5a;
+    color: #d45a5;
 }
